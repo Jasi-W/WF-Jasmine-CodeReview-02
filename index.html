@@ -12,8 +12,8 @@
 
 	<body>
 		<header>
-			<img src="img/logo.png" alt="Logo" class="v-center">
-			<img src="img/banner.png" alt="Newspaper Banner" class="right">
+			<img src="img/logo.png" alt="Logo" class="img_left">
+			<img src="img/banner.png" alt="Banner" class="img_right">
 		</header>
 		
 		<nav>
@@ -32,9 +32,14 @@
 						<div class="split left">
 							<label for="name">Your name:</label>
 							<input type="text" id="name" name="name" required>
-								
+							
 							<label for="country">Country:</label>
-							<input id="country" name="country" required>
+							<input type="search" list="country">
+								<datalist id="country">
+									<option value="Austria"> 
+									<option value="Hungary"> 
+									<option value="Greece"> 
+								</datalist>								
 						</div>
 						
 						<div class="split right">
@@ -61,39 +66,42 @@
 			
 			<aside>
 				<div class="split left">
-					<h3>What comes standard</h3>
-					<p>The coverage you need</p>
-					
-					<p>Bodyly Injury Liability</p>
-					<p>Property Damage</p>
-					<p>Medical Payments</p>
+					<div class="box">
+						<p class="blue">What comes standard</p>
+						<p>The coverage you need</p><br>
+						
+						<p>&checkmark; Bodily Injury Liability</p>
+						<p>&checkmark; Property Damage</p>
+						<p>&checkmark; Medical Payments</p><br>
 
-					<p>Benefits</p>
-					<p>12-month rate guarantee | 24/7 customer service | Lifetime Repair Guarantee</p>
+						<b><p>Benefits</p></b>
+						<p>12-month rate guarantee | 24/7 customer service | Lifetime Repair Guarantee</p>
+					</div>
 				</div>
 				
 				<div class="split right">
-					<h3>Add-on protection & coverage</h3>
-					<p>For more peace of mind</p>
-					
-					<p>Better Car Replacement</p>
-					<p>Towing & Labor</p>
-					<p>Rental Car Coverage</p>
+					<div class="box">
+						<p class="blue">Add-on protection & coverage</p>
+						<p>For more peace of mind</p><br>
+						
+						<p>&checkmark; Better Car Replacement</p>
+						<p>&checkmark; Towing & Labor</p>
+						<p>&checkmark; Rental Car Coverage</p><br>
 
-					<p>Earned Benefits</p>
-					<p>Accident Forgiveness1 | New Car Preplacement TM</p>
+						<b><p>Earned Benefits</p></b>
+						<p>Accident Forgiveness&sup1; | New Car Preplacement&trade;</p>
+					</div>
 				</div>
 			</aside>
 		</main>
 		
 		<footer>
 			<div>
-			<a href="index.html">Home</a>
-			<a href="index.html">Team</a>
+				<a href="index.html">Home</a>
+				<a href="index.html">Team</a>
 			</div>
 			
-			<img src="img/logo.png" alt="Logo" class="right">
-			
+			<img src="img/logo.png" alt="Logo">
 			<p>Jasmine Wagner - CodeFactory 2019</p>
 		</footer>
 	</body>

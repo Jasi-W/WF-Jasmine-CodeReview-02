@@ -1,10 +1,14 @@
 
-p	{ color: black; font-size: 1.2em; }
+p	{ color: black; font-size: 1em; }
 h1	{ color: black; font-size: 2em; font-weight: normal; }
 h2	{ color: black; font-size: 1.5em; font-weight: normal; }
 
 a		{ color: white; font-size: 1.2em; text-decoration: none; padding: 10px; }
 a:hover { font-weight: bold; background-color: white; color: darkred; }
+
+/* 
+* { border: 1px solid red; }
+*/
 
 * {
 	box-sizing: border-box;
@@ -31,7 +35,7 @@ nav {
 }
 
 section {
-	height: 30em;
+	height: 27.5em;
 	background-image: url("img/traffic.jpg");
 	background-size: 100%;
 }
@@ -45,6 +49,10 @@ section div {
 	margin: 0 auto;
 	background-color: white;
 	text-align: center;
+}
+
+label {
+	text-align: left;
 }
 
 form {
@@ -81,21 +89,26 @@ article {
 }
 
 aside {
-	width: 100%;
-	height: 20em;
-	padding: 20px;
+	height: 21em;
+	font-size: 0.9em;
 	background-color: white;
 }
 
 aside div {
-	margin: 10px;
 	padding: 20px;
-	border: thin solid gray;
+}
+
+.box {
+	border: thin solid lightgray;
 }
 
 footer {
 	padding: 10px;
 	background-color: black;
+}
+
+footer img {
+	float: right;
 }
 
 footer p {
@@ -116,24 +129,23 @@ footer p {
 	color: green;
 }
 
-.transparent { background-color: rgba(255, 255, 255, 0.8); }
+.blue {
+	font-size: 1.2em;
+	color: darkblue;
+}
 
-/* 
-* { border: 1px solid red; }
-*/
+.transparent { background-color: rgba(255, 255, 255, 0.8); }
 
 /*-- SPLIT --*/
 .split {
-  width: 45%;
+  width: 50%;
   float: left;
+  margin: 20px 0;
 }
 
 .left { left: 0; }
 .right { right: 0; }
 
-.centered {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
+.img_left { float: left; }
+.img_right { float: right; }
+
