@@ -1,15 +1,16 @@
 
-p	{ font-family: calibri; color: black; font-size: 1.2em; }
-h1	{ font-family: calibri; color: black; font-size: 2em; font-weight: normal; }
-h2	{ font-family: calibri; color: black; font-size: 1.5em; font-weight: normal; }
-nav	{ font-family: calibri; color: white; font-size: 1.2em;}
-a	{ font-family: calibri; color: white; text-decoration: none; }
+p	{ color: black; font-size: 1.2em; }
+h1	{ color: black; font-size: 2em; font-weight: normal; }
+h2	{ color: black; font-size: 1.5em; font-weight: normal; }
 
+a		{ color: white; font-size: 1.2em; text-decoration: none; padding: 10px; }
+a:hover { font-weight: bold; background-color: white; color: darkred; }
 
 * {
 	box-sizing: border-box;
 	-webkit-user-select: none;
     -moz-user-select: -moz-none;
+	font-family: calibri;
 	margin: 0;
 }
 
@@ -29,17 +30,6 @@ nav {
 	background-color: darkred;
 }
 
-nav a {
-	font-size: 1.2em;
-	padding: 10px;
-}
-
-nav a:hover {
-	font-weight: bold;
-	background-color: white;
-	color: darkred;
-}
-
 section {
 	height: 30em;
 	background-image: url("img/traffic.jpg");
@@ -53,23 +43,54 @@ section h1 {
 section div {
 	width: 80%;
 	margin: 0 auto;
+	background-color: white;
 	text-align: center;
-	background-color: white;
-	opacity: 0.6;
-}
-
-input {
-	background-color: white;
 }
 
 form {
-	opacity: 1;
+	padding: 0 30px;
+}
+
+form div {
+	background: none;
+}
+
+label { display: block; }
+
+input {
+	width: 200px;
+	height: 30px;
+	margin-bottom: 20px;
+	background-color: white;
+}
+
+.button {
+	width: 180px;
+	height: 30px;
+	font-size: 1.5em;
+	color: white;
+	background-color: forestgreen;
+	border: none;
+	border-radius: 12px;
 }
 
 article {
 	padding: 50px 120px 30px 120px;
 	background-color: lightgray;
 	text-align: center;
+}
+
+aside {
+	width: 100%;
+	height: 20em;
+	padding: 20px;
+	background-color: white;
+}
+
+aside div {
+	margin: 10px;
+	padding: 20px;
+	border: thin solid gray;
 }
 
 footer {
@@ -83,22 +104,36 @@ footer p {
 	text-align: center;
 }
 
-
-
 /*-- ALLGEMEIN --*/
-.right {
-	float: right;
-}
-
-.v-center {
-	margin-top: 15px;
-
-}
 
 .white {
 	color: white;
 }
 
+.green {
+	padding: 20px;
+	font-size: 1.6em;
+	color: green;
+}
+
+.transparent { background-color: rgba(255, 255, 255, 0.8); }
+
 /* 
 * { border: 1px solid red; }
 */
+
+/*-- SPLIT --*/
+.split {
+  width: 45%;
+  float: left;
+}
+
+.left { left: 0; }
+.right { right: 0; }
+
+.centered {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
