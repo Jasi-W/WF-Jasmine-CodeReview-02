@@ -35,7 +35,7 @@ header {
 }
 
 nav {
-	padding: 12px 10px 9px 10px;
+	padding: 12px 10px 8px 10px;
 	background-color: darkred;
 }
 
@@ -47,6 +47,7 @@ section {
 }
 
 section h1 { padding: 20px }
+section img { object-fit: cover; }
 
 .box {
 	margin: 0 60px;
@@ -178,3 +179,18 @@ span {
 	color: darkblue;
 }
 
+@media screen and (max-width: 900px) {
+	body { width: 100%; margin: 0;}
+	
+}
+
+@media screen and (max-width: 700px) {
+	header { height: 10em; }
+	.flex { flex-direction: column; padding-top: 10px; }
+	.item { width: 80%; margin: 10px auto; }
+	#text-box { font-size: 1em; padding: 10px; }
+	input { margin-bottom: 10px;  }
+	section img { height: 100%, }
+	section h1 { font-size: 1.6em; padding-top: 10px; }
+	.team { width: 80%; margin: 20px auto; }
+}
