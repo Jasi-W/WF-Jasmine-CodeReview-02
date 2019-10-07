@@ -3,30 +3,37 @@ p	{ color: black; font-size: 1em; }
 h1	{ color: black; font-size: 2em; font-weight: normal; }
 h2	{ color: black; font-size: 1.5em; font-weight: normal; }
 
-a		{ color: white; font-size: 1.2em; text-decoration: none; padding: 10px; }
-a:hover:not(.active) { color: darkred; background-color: lightgray; }
+a {
+	color: white;
+	font-size: 1.2em;
+	text-decoration: none;
+	padding: 10px;
+}
+
+a:hover:not(.active) {
+	color: darkred;
+	background-color: lightgray;
+}
 
 .active {
 	background-color: white;
 	color: darkred;
+	cursor: default;
 }
 
-/* 
-* { border: 1px solid red; }
-*/
 
 * {
 	box-sizing: border-box;
-	-webkit-user-select: none;
-    -moz-user-select: -moz-none;
 	font-family: "Century Gothic";
 	margin: 0;
 }
 
 body {
-	width: 80%;
+	width: 60%;
 	margin: 0 auto;
 }
+
+main h1 { padding: 20px;}
 
 header {
 	height: 6em;
@@ -39,6 +46,7 @@ nav {
 	background-color: darkred;
 }
 
+
 /*-- MAIN CONTENT--*/
 section {
 	height: 30em;
@@ -46,7 +54,6 @@ section {
 	background-size: 100%;
 }
 
-section h1 { padding: 20px }
 section img { object-fit: cover; }
 
 .box {
@@ -76,22 +83,25 @@ input {
 	background-color: forestgreen;
 	border: none;
 	border-radius: 12px;
+	cursor: pointer;
+	opacity: 0.8;
 }
 
+.button:hover { opacity: 1; }
+
 article {
-	padding: 50px 100px 20px 100px;
+	padding: 40px 140px;
 	background-color: lightgray;
 	text-align: center;
 }
 
 aside {
 	background-color: white;
-	padding: 10px;
+	padding: 40px 10px;
 }
 
-
 aside div {
-	padding: 40px;
+	padding: 20px;
 	border-top: 2px solid black;
 	border-left: thin solid lightgray;
 	border-right: thin solid lightgray;
@@ -122,47 +132,49 @@ footer p {
 	justify-content: space-between;
 }
 
-.item { 
-	width: 45%;
-	margin: 20px 0;
-}
+.item { width: 48%; }
+
 
 /*-- TEAM --*/
 .team {
-	width: 45%;
+	width: 46%;
 	border: none;
 	margin-bottom: 30px;
-	padding: 20px;
+	padding: 10px;
 }
 
-.team img { width: 100%; }
+.team img { width: 100%; margin-bottom: 10px; }
 
 .team_button {
 	width: 100%;
-	margin-top: 20px;
+	margin-top: 10px;
 	padding: 10px;
+	font-size: 1.2em;
 	border: none;
 	background-color: dimgray;
 	color: white;
+	cursor: pointer;
 }
 
 .team_button:hover {
 	background-color: lightgray;
 	color: dimgray;
+	font-weight: bold;
 }
 
 .shadow { box-shadow: 0px 0px 10px darkgrey; }
-
-main h1 { padding: 20px; }
-
 
 /*-- ALLGEMEIN --*/
 .img_left { float: left; margin: 1em; }
 .img_right { float: right; }
 .white { color: white; }
 
+.blue {
+	font-size: 1.2em;
+	color: darkblue;
+}
 
-#text-box{
+#text-box {
 	font-size: 1.2em;
 	padding: 20px;
 	color: green;
@@ -174,18 +186,14 @@ span {
 	margin-right: 10px;
 }
 
-.blue {
-	font-size: 1.2em;
-	color: darkblue;
-}
 
+/*-- RESPONSIVE --*/
 @media screen and (max-width: 900px) {
 	body { width: 100%; margin: 0;}
 	
 }
 
 @media screen and (max-width: 700px) {
-	header { height: 10em; }
 	.flex { flex-direction: column; padding-top: 10px; }
 	.item { width: 80%; margin: 10px auto; }
 	#text-box { font-size: 1em; padding: 10px; }
